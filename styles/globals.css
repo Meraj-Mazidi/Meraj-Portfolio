@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #232946;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #717ebd;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #525f9e;
+}
+
+::-moz-selection {
+  color: #232946;
+  background-image: linear-gradient(45deg, #eebbc3, #b8c1ec);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+::selection {
+  color: #232946;
+  background: #b8c1ec;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #232946;
+}
+
+.font-pt {
+  font-family: "PT Serif", serif;
+}
+
+/* Let's Connect section */
+
+.connect-inputs {
+  border-radius: 6px;
+}
+
+.connect-inputs > .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused,
+.MuiInputBase-colorPrimary {
+  color: #eebbc3 !important;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.connect-inputs > label {
+  color: white;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #eebbc3 !important;
+}
+
+input {
+  background-color: transparent !important;
+}
