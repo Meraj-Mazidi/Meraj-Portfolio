@@ -82,7 +82,7 @@ const moverii = () => {
                 <img
                   src={"/images/projects/moverii landing pages preview/Surfcamps.jpg"}
                   alt="moverii.de"
-                  className="md:w-[90%] lg:w-[500px] rounded-2xl hover:shadow-light-3xl"
+                  className="md:w-[90%] lg:w-[500px] xl:w-full xl:-ml-10 rounded-2xl hover:shadow-light-3xl"
                 />
               </a>
             </Tilt>

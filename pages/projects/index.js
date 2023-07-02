@@ -136,7 +136,7 @@ const projects = () => {
                   key={i}
                   scale="1.1"
                   transitionSpeed={5000}
-                  className="w-[100%] rounded-xl shadow-light-xl hover:shadow-light-3xl md:mb-16"
+                  className="w-[100%] rounded-xl shadow-light-xl hover:shadow-light-3xl md:mb-16 cursor-pointer"
                 >
                   <li>
                     <Link

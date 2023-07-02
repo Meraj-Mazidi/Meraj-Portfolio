@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import { Fragment } from "react";
-import Image from "next/image";
 
 const ImagesData = [
   {
@@ -46,8 +45,7 @@ const Images = () => {
             How do I look like in the real world?
           </p>
           <p className="md:w-[650px] text-center text-violet text-base">
-            These are some of the images, in which you can see the actual
-            ME :)
+            These are some of the images, in which you can see the actual ME :)
           </p>
         </div>
 
@@ -56,9 +54,7 @@ const Images = () => {
             <span key={i} className="w-full md:w-[90%]">
               <img
                 src={item.image}
-                alt="my-image"
-                // width="auto"
-                // height="auto"
+                alt="Meraj Mazidi"
                 className={`w-full h-full rounded-2xl hover:shadow-light-3xl object-cover object-center ${item.customClass}`}
               />
             </span>

@@ -75,7 +75,7 @@ const LetsConnect = () => {
         src={"images/vectors/circle-spin.svg"}
         alt="CircleSpin"
         width={680}
-        className="absolute -right-[38%] md:-right-[40%] lg:-right-[28%] top-[200px] md:top-10 animate-spin blur-sm"
+        className="absolute -right-[38%] md:-right-[40%] lg:-right-[28%] top-[200px] md:top-10 animate-spin blur-sm contact1"
       />
 
       {messageSent && (
@@ -85,14 +85,14 @@ const LetsConnect = () => {
       )}
 
       <form
-        className={`px-10 lg:w-[950px] mx-auto mb-[200px] ${
-          messageSent && "hidden"
+        className={`px-10 lg:w-[950px] mx-auto mb-[200px] contact2 ${
+          messageSent && "hidden hide"
         }`}
         ref={form}
         onSubmit={sendEmail}
       >
         {/* Input and content */}
-        <div className={`grid grid-cols-1 md:grid-cols-2 gap-5`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-5 contact3`}>
           <TextField
             name="first_name"
             label="First Name"
@@ -129,7 +129,7 @@ const LetsConnect = () => {
           <textarea
             name="message"
             id=""
-            className="col-span-full rounded-[8px] bg-transparent border-2 border-pink  shadow-violet p-4 text-white placeholder:text-pink focus:outline-none min-h-[200px] focus:border-white shadow-inner"
+            className="col-span-full rounded-[8px] bg-transparent border-2 border-pink  shadow-violet p-4 text-white placeholder:text-pink focus:outline-none min-h-[200px] focus:border-white shadow-inner contact4"
             placeholder="Hey Meraj..."
             required
           ></textarea>
@@ -150,9 +150,9 @@ const LetsConnect = () => {
 
       <img
         src={"images/vectors/boxes.svg"}
-        alt="CircleSpin"
-        width={680}
-        className="absolute -left-[30%] md:-left-[250px] bottom-[150px] md:bottom-[30%] blur-sm rotate-90"
+        alt="Box"
+        // width={680}
+        className="absolute -left-[30%] md:-left-[250px] bottom-[150px] md:bottom-[30%] blur-sm rotate-90 contact5"
       />
     </div>
   );

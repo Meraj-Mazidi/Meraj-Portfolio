@@ -75,19 +75,403 @@ input {
   background-color: transparent !important;
 }
 
-.sticky-position {
-  position: sticky !important;
-}
-
-.fix-position {
-  position: fixed !important;
-}
-
-.bt {
-  justify-content: space-between !important;
-}
+/* 
+  Note: Due to some unfortunate and mysterious bug, 
+  some of the Tailwind classes refuse to be applied when I deployed the project,
+  so I had no choise but to just add the problematic 
+  classes manually by adding a class name, old fashioned!  
+*/
 
 .line {
   width: 112px;
   border: 1px solid white;
+}
+
+.nav {
+  background: rgba(43, 45, 66, 0.3);
+  --tw-backdrop-blur: blur(10px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
+  position: sticky !important;
+  top: 0;
+  z-index: 999999999;
+}
+
+.nav-child {
+  justify-content: space-between !important;
+  display: flex;
+  align-items: center;
+  height: 112px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .nav-child {
+    width: 100% !important;
+  }
+}
+@media (min-width: 1024px) {
+  @media (min-width: 640px) {
+    .nav-child {
+      max-width: 640px !important;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  @media (min-width: 768px) {
+    .nav-child {
+      max-width: 768px !important;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  @media (min-width: 1024px) {
+    .nav-child {
+      max-width: 1024px !important;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  @media (min-width: 1280px) {
+    .nav-child {
+      max-width: 1280px !important;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  @media (min-width: 1536px) {
+    .nav-child {
+      max-width: 1536px !important;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav-child {
+    padding-left: 8rem;
+  }
+}
+
+.nav-ul {
+  display: flex;
+  gap: 40px;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+}
+
+.contact-nav {
+  background-color: transparent;
+  width: 5rem;
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  height: 100%;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .contact-nav {
+    display: block;
+  }
+}
+
+.contactNav-1 {
+  position: absolute;
+  bottom: 0;
+}
+
+.contactNav-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 16px;
+  gap: 16px;
+}
+
+.contactNav-3 {
+  font-size: 33px;
+  color: #b8c1ec;
+}
+
+.contactNav-4 {
+  width: 32px;
+}
+
+.contactNav-5 {
+  width: 3px;
+  height: 8rem;
+  background-color: #b8c1ec;
+}
+
+.productCards {
+  width: 16rem;
+  height: auto;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 12px;
+  padding: 20px;
+  position: absolute;
+}
+
+@media (min-width: 1280px) {
+  .productCards {
+    width: 350px !important;
+  }
+}
+
+.productCards1 {
+  z-index: 10;
+  background-color: #b8c1ec;
+  left: -4rem;
+  top: -160px;
+}
+
+@media (min-width: 768px) {
+  .productCards1 {
+    left: -3.5rem /* -56px */;
+    top: -2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productCards1 {
+    left: 0px;
+    top: 0;
+  }
+}
+
+.productCards2 {
+  z-index: 20;
+  background: #eebbc3;
+  right: -70px;
+  top: -25px;
+}
+
+@media (min-width: 768px) {
+  .productCards2 {
+    right: -1.25rem /* -20px */;
+    top: 25%;
+    width: 65%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productCards2 {
+    right: 2.5rem /* 40px */;
+    top: 25%;
+    width: 16rem /* 256px */;
+  }
+}
+
+@media (min-width: 1280px) {
+  .productCards2 {
+    height: 200px !important;
+    justify-content: center;
+  }
+}
+
+.productCards3 {
+  z-index: 30;
+  background-color: #b8c1ec;
+  left: -4rem;
+  bottom: -165px;
+}
+
+@media (min-width: 768px) {
+  .productCards3 {
+    left: -3.5rem /* -56px */;
+    bottom: -16%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productCards3 {
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+.productContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: Poppins, sans-serif;
+}
+
+.githubCard {
+  height: auto;
+  font-family: Poppins, sans-serif;
+  --tw-scale-x: 0.9;
+  --tw-scale-y: 0.9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 768px) {
+  .githubCard {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+.githubCard1 {
+  padding: 40px !important;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.githubCard2 {
+  padding: 8px !important;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 275px;
+}
+
+.githubCard2:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 1024px) {
+  .githubCard2 {
+    width: 285px;
+  }
+}
+
+.githubCard3 {
+  width: 2rem !important;
+}
+
+.githubCard4:hover {
+  border-bottom: 2px solid #eebbc3;
+}
+
+.githubCard5 {
+  font-size: 16px;
+}
+
+.githubCard6 {
+  font-size: 20px;
+}
+
+.contact1 {
+  position: absolute;
+  right: -38%;
+  top: 200px;
+}
+
+@media (min-width: 768px) {
+  .contact1 {
+    right: -40%;
+    top: 2.5rem /* 40px */;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact1 {
+    right: -28%;
+  }
+}
+
+.contact2 {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.contact3 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem /* 20px */;
+}
+
+@media (min-width: 768px) {
+  .contact3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.contact4 {
+  grid-column: 1 / -1;
+  border-radius: 8px;
+  background: transparent !important;
+  border: 2px solid #eebbc3;
+  padding: 1rem;
+  color: white;
+  min-height: 200px;
+  --tw-shadow-color: #b8c1ec;
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.contact4::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(238 187 195 / var(--tw-text-opacity));
+}
+
+.contact4:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border: 2px solid white;
+}
+
+.contact5 {
+  position: absolute;
+  left: -30%;
+  bottom: 150px;
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  width: 680px;
+}
+
+@media (min-width: 768px) {
+  .contact5 {
+    left: -250px;
+    bottom: 30%;
+  }
 }

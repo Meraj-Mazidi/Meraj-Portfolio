@@ -34,9 +34,9 @@ const cardData = [
 
 const ContactCard = () => {
   return (
-    <div className="md:w-96 h-auto font-poppins scale-90 md:scale-100">
+    <div className="md:w-96 h-auto font-poppins scale-90 md:scale-100 githubCard">
       <Tilt scale="1.1" transitionSpeed={5000}>
-        <div className="bg-violet !p-[40px] rounded-3xl shadow-light-3xl hover:shadow-violet-5xl flex flex-col gap-5">
+        <div className="bg-violet p-[40px] rounded-3xl shadow-light-3xl hover:shadow-violet-5xl flex flex-col gap-5 githubCard1">
           <p className="font-bold text-xl text-center">My Contact Info</p>
 
           {cardData.map((item) => (
@@ -44,18 +44,14 @@ const ContactCard = () => {
               href={item.href}
               key={item.id}
               target="_blank"
-              className="bg-blue p-2 px-3 rounded-xl flex items-center gap-3 cursor-pointer hover:shadow-md hover:shadow-white hover:scale-105 transition-all duration-300 w-[275px] lg:w-[285px]"
+              className="bg-blue p-2 px-3 rounded-xl flex items-center gap-3 cursor-pointer hover:shadow-md hover:shadow-white hover:scale-105 transition-all duration-300 w-[275px] lg:w-[285px] githubCard2"
             >
-              <img
-                src={item.icon}
-                alt={item.alt}
-                width="auto"
-                height="auto"
-                className="w-8"
-              />
+              <img src={item.icon} alt={item.alt} className="w-8 githubCard3" />
               <p
-                className={`text-violet hover:text-white transition-all duration-200 hover:border-b-2 hover:border-pink ${
-                  item.id === 1 ? "text-base" : "text-xl"
+                className={`text-violet hover:text-white transition-all duration-200 hover:border-b-2 hover:border-pink githubCard4 ${
+                  item.id === 1
+                    ? "text-base githubCard5"
+                    : "text-xl githubCard6"
                 }`}
               >
                 {item.text}
