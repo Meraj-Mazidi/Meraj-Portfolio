@@ -74,3 +74,20 @@ body {
 input {
   background-color: transparent !important;
 }
+
+.sticky-position {
+  position: sticky !important;
+}
+
+.fix-position {
+  position: fixed !important;
+}
+
+.bt {
+  justify-content: space-between !important;
+}
+
+.line {
+  width: 112px;
+  border: 1px solid white;
+}

@@ -31,7 +31,7 @@ const socialBarData = [
 
 const ContactNav = () => {
   return (
-    <div className="bg-transparent w-20 fixed bottom-0 left-0 z-50 h-fit lg:h-full hidden lg:block">
+    <div className="bg-transparent w-20 fix-position bottom-0 left-0 z-50 h-fit lg:h-full hidden lg:block">
       <div className="absolute bottom-0">
         <div className="w-full flex flex-col justify-center items-center pl-4 gap-4">
           {/* Social Icons */}
