@@ -41,15 +41,13 @@ const Header = () => {
         <img
           src={"images/vectors/triangle.svg"}
           alt="triangle"
-          width="auto"
-          height="auto"
           className="absolute right-[20px] lg:right-36 xl:right-0 top-16 w-20 animate-spin"
         />
 
         <LineText text="Who is He?" />
 
         <h1 className="text-white text-7xl font-extrabold w-[80%]">
-          Meraj Mazidi
+          Meraj Mazidii
         </h1>
 
         <p className="md:w-[80%] text-violet text-base font-medium font-poppins">
