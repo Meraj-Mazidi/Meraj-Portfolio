@@ -33,7 +33,7 @@ const ContactNav = () => {
   return (
     <div className="bg-transparent w-20 fixed bottom-0 left-0 z-50 h-fit lg:h-full hidden lg:block">
       <div className="absolute bottom-0">
-        <div className="w-full flex flex-col justify-center items-center ml-3 gap-4">
+        <div className="w-full flex flex-col justify-center items-center pl-4 gap-4">
           {/* Social Icons */}
           {socialBarData.map((item, i) => (
             <a
@@ -48,14 +48,14 @@ const ContactNav = () => {
                 <img
                   src={item.icon}
                   alt={item.alt}
-                  className="!w-8"
+                  className="!w-[32px]"
                 />
               )}
             </a>
           ))}
 
           {/* Line */}
-          <span className="w-[3px] h-32 bg-violet" />
+          <span className="w-[3px] h-32 bg-violet border border-violet" />
         </div>
       </div>
     </div>

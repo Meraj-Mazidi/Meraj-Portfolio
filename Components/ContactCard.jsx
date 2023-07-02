@@ -36,7 +36,7 @@ const ContactCard = () => {
   return (
     <div className="md:w-96 h-auto font-poppins scale-90 md:scale-100">
       <Tilt scale="1.1" transitionSpeed={5000}>
-        <div className="bg-violet p-10 rounded-3xl shadow-light-3xl hover:shadow-violet-5xl flex flex-col gap-5">
+        <div className="bg-violet !p-[40px] rounded-3xl shadow-light-3xl hover:shadow-violet-5xl flex flex-col gap-5">
           <p className="font-bold text-xl text-center">My Contact Info</p>
 
           {cardData.map((item) => (

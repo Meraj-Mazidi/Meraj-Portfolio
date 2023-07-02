@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
 import { LineText, ContactCard } from "../Components";
+import { HiArrowUp } from "react-icons/hi";
 
 const Github = () => {
   const ref = useRef(null);
@@ -58,6 +59,11 @@ const Github = () => {
           <ContactCard />
         </div>
       </div>
+
+      {/* Arrow up */}
+      <a href="#home" className="absolute w-[50px] h-[50px] bg-violet rounded-full right-2 flex justify-center items-center animate-bounce shadow shadow-white cursor-pointer hover:bg-blue text-blue hover:text-white transition-all duration-300">
+          <HiArrowUp className="text-3xl" />
+      </a>
     </section>
   );
 };

@@ -30,7 +30,7 @@ const ProductCards = () => {
       {ProductCardsData.map((card, i) => (
         <div
           key={i}
-          className={`w-64 h-auto border flex flex-col gap-3 rounded-xl p-5 shadow-light-xl hover:shadow-light-3xl cursor-pointer hover:scale-110 transition-all duration-300 absolute ${card.customClass} xl:!w-[350px]`}
+          className={`w-64 h-auto border flex flex-col gap-3 rounded-xl p-5 shadow-light-xl hover:shadow-light-3xl cursor-pointer hover:scale-110 transition-all duration-300 absolute xl:!w-[350px] ${card.customClass}`}
         >
           <p className="font-bold text-2xl underline">{card.title}</p>
           <p>{card.desc}</p>

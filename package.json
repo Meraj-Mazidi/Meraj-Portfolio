@@ -21,8 +21,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-modern-drawer": "^1.1.2",
-    "react-parallax-tilt": "^1.7.79",
-    "react-stickynode": "^4.1.0"
+    "react-parallax-tilt": "^1.7.79"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
