@@ -45,9 +45,9 @@ const Projects = () => {
   const isInView = useInView(ref);
 
   return (
-    <section className="w-screen pl-10 lg:pl-32 xl:container xl:mx-auto mt-[400px] md:mt-[100px]" ref={ref}>
+    <section className="w-screen px-6 md:px-10 lg:pl-32 xl:container xl:mx-auto mt-[400px] md:mt-[100px]" ref={ref}>
       <div
-        className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 justify-evenly relative px-4 md:px-10 lg:px-0"
+        className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 justify-evenly relative"
         style={{
           opacity: isInView ? 1 : 0,
           transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
@@ -67,7 +67,7 @@ const Projects = () => {
                 alt={item.slug}
                 width="auto"
                 height="auto"
-                className="w-[450px] rounded-2xl hover:shadow-light-3xl"
+                className="w-[450px] xl:w-full rounded-2xl hover:shadow-light-3xl"
               />
             </a>
           </Tilt>

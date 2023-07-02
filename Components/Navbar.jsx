@@ -70,16 +70,16 @@ const Navbar = () => {
   }
 
   return (
-    <Sticky
-      enabled={true}
-      top={0}
-      innerZ={100}
-      activeClass="!w-screen"
-      className="w-screen"
-      onStateChange={handleStateChange}
-    >
+    // <Sticky
+    //   enabled={true}
+    //   top={0}
+    //   innerZ={100}
+    //   activeClass="!w-screen"
+    //   className="w-screen"
+    //   onStateChange={handleStateChange}
+    // >
       <nav
-        className={`lg:!container xl:mx-auto bg-blue px-10 xl:pl-32 ${
+        className={`lg:!container xl:mx-auto !bg-blue px-10 xl:pl-32 sticky top-0 z-[9999] ${
           isSticky && "shadow-lg"
         }`}
       >
@@ -92,7 +92,7 @@ const Navbar = () => {
             <img
               src={"/logo-blue-bg-2.png"}
               alt="Logo"
-              className={`py-2 my-0 ${
+              className={`py-2 my-0 cursor-pointer ${
                 isSticky ? "w-14" : "w-20"
               } transition-all duration-300`}
             />
@@ -125,7 +125,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-    </Sticky>
+    //  </Sticky> 
   );
 };
 

@@ -6,7 +6,7 @@ const Connect = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   return (
-    <section className="w-screen pl-10 lg:pl-32 xl:container xl:mx-auto mt-[100px]" ref={ref}>
+    <section className="w-screen px-6 md:pl-10 lg:pl-32 xl:container xl:mx-auto mt-[100px]" ref={ref}>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 relative">
         <img
           src={"images/vectors/circle-spin.svg"}
@@ -16,7 +16,7 @@ const Connect = () => {
         />
         {/* Left Side */}
         <div
-          className="flex flex-col gap-5 font-poppins py-5 relative px-10 md:pl-10 lg:pl-0 col-span-1"
+          className="flex flex-col gap-5 font-poppins py-5 relative col-span-1"
           style={{
             transform: isInView ? "none" : "translateX(-1000px)",
             opacity: isInView ? 1 : 0,
@@ -24,8 +24,8 @@ const Connect = () => {
           }}
         >
           <LineText text="Meet and Greet!" />
-          <p className="w-[58%] text-white text-2xl">
-            Impressed Already? <span className="text-pink">Schedule</span> a
+          <p className="md:w-[58%] text-white text-2xl">
+            Impressed Already? <br /> <span className="text-pink">Schedule</span> a
             call with him.
           </p>
 

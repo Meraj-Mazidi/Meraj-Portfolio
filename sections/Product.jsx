@@ -7,7 +7,7 @@ const Product = () => {
   const isInView = useInView(ref);
 
   return (
-    <section className="w-screen pl-10 lg:pl-32 xl:container xl:mx-auto mt-[100px]" ref={ref}>
+    <section className="w-screen px-6 md:pr-3 md:pl-10 lg:pl-32 xl:container xl:mx-auto mt-[100px]" ref={ref}>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 relative">
         <img
           src={"images/vectors/boxes.svg"}
@@ -17,7 +17,7 @@ const Product = () => {
         />
         {/* Left Side */}
         <div
-          className="h-full flex flex-col gap-5 py-5 font-poppins relative px-10 lg:px-0"
+          className="h-full flex flex-col gap-5 py-5 font-poppins relative"
           style={{
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
@@ -31,7 +31,7 @@ const Product = () => {
             className="absolute right-[25%] top-5 hidden lg:block"
           />
           <LineText text="Let’s walk the talk!" />
-          <p className="text-white font-base text-3xl lg:w-[50%] leading-7">
+          <p className="text-white font-base text-3xl md:w-[85%] lg:w-[50%] leading-8">
             Some awesome <span className="text-pink font-bold">Products</span>{" "}
             for the awesome people
           </p>

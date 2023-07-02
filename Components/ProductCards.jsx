@@ -13,7 +13,7 @@ const ProductCardsData = [
     title: "Responsive",
     desc: "The art of creating some awesome Responsive smartphone applications.",
     customClass:
-      "z-20 bg-pink shadow-pink -right-[70px] md:-right-5 lg:right-10 -top-[25px] md:top-[25%] lg:top-1/4 md:w-[65%] lg:w-64",
+      "z-20 bg-pink shadow-pink -right-[70px] md:-right-5 lg:right-10 -top-[25px] md:top-[25%] lg:top-1/4 md:w-[65%] lg:w-64 xl:!h-[200px] xl:justify-center",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const ProductCards = () => {
       {ProductCardsData.map((card, i) => (
         <div
           key={i}
-          className={`w-64 h-auto border flex flex-col gap-3 rounded-xl p-5 shadow-light-xl hover:shadow-light-3xl cursor-pointer hover:scale-110 transition-all duration-300 absolute ${card.customClass} `}
+          className={`w-64 h-auto border flex flex-col gap-3 rounded-xl p-5 shadow-light-xl hover:shadow-light-3xl cursor-pointer hover:scale-110 transition-all duration-300 absolute ${card.customClass} xl:!w-[350px]`}
         >
           <p className="font-bold text-2xl underline">{card.title}</p>
           <p>{card.desc}</p>

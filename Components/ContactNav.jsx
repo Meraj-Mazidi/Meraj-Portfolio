@@ -43,12 +43,12 @@ const ContactNav = () => {
               className="hover:scale-75 transition-all duration-500"
             >
               {item.alt === "telegram" ? (
-                <BsTelegram className="text-[32px] text-violet" />
+                <BsTelegram className="!text-[33px] text-violet" />
               ) : (
                 <img
                   src={item.icon}
                   alt={item.alt}
-                  className="w-8"
+                  className="!w-8"
                 />
               )}
             </a>

@@ -8,7 +8,7 @@ const Github = () => {
 
   return (
     <section
-      className="w-screen pl-10 lg:pl-32 xl:container xl:mx-auto mt-[100px] mb-[80px] relative"
+      className="w-screen px-6 md:pl-0 md:pr-10 lg:pl-32 xl:container xl:mx-auto mt-[100px] mb-[80px] relative"
       ref={ref}
     >
       <img
@@ -18,7 +18,7 @@ const Github = () => {
         className="absolute top-0 -left-[30%] lg:left-[30%] animate-spin"
       />
       <div
-        className="w-full flex flex-col md:flex-row px-10 md:pl-10 lg:pl-0"
+        className="w-full flex flex-col md:flex-row md:pl-10 lg:pl-0"
         style={{
           opacity: isInView ? 1 : 0,
           transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
@@ -28,8 +28,8 @@ const Github = () => {
         <div className="w-full md:w-1/2 flex flex-col gap-5 font-poppins py-10">
           <LineText text="Like what you see?" />
 
-          <p className="md:w-[50%] text-white text-2xl">
-            Loved this portfolio? Make this{" "}
+          <p className="lg:w-[50%] text-white text-2xl">
+            Loved this portfolio? <br /> Make this{" "}
             <span className="text-pink">yours</span> by forking.
           </p>
 
@@ -48,7 +48,7 @@ const Github = () => {
 
         {/* Right Side */}
         <div
-          className="w-full md:w-1/2 flex justify-center items-center px-10 md:pr-0 lg:pr-10"
+          className="w-full md:w-1/2 flex justify-center items-center lg:pr-10"
           style={{
             transform: isInView ? "none" : "translateX(1000px)",
             opacity: isInView ? 1 : 0,
