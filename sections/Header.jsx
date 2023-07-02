@@ -49,7 +49,7 @@ const Header = () => {
         <LineText text="Who is He?" />
 
         <h1 className="text-white text-7xl font-extrabold w-[80%]">
-          Meraj Mazidi
+          Meraj Mazidii
         </h1>
 
         <p className="md:w-[80%] text-violet text-base font-medium font-poppins">
