@@ -5,23 +5,23 @@ import { NextSeo } from "next-seo";
 
 const ImagesData = [
   {
-    image: "/images/Bio/1.jpg",
+    image: "/images/Bio/1.JPG",
   },
   {
     image: "/images/Bio/2.jpg",
     customClass: "!object-right",
   },
   {
-    image: "/images/Bio/3.jpg",
+    image: "/images/Bio/3.JPG",
   },
   {
-    image: "/images/Bio/4.jpg",
+    image: "/images/Bio/4.JPG",
   },
   {
-    image: "/images/Bio/5.jpg",
+    image: "/images/Bio/5.JPG",
   },
   {
-    image: "/images/Bio/6.jpg",
+    image: "/images/Bio/6.JPG",
   },
   {
     image: "/images/Bio/7.jpg",
