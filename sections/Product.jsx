@@ -50,7 +50,7 @@ const Product = () => {
 
         {/* Right Side */}
         <div
-          className="px-5 h-full mt-32 md:mt-0 w-full"
+          className="px-5 h-full mt-32 md:mt-0 w-full cards"
           style={{
             transform: isInView ? "none" : "translateX(1000px)",
             opacity: isInView ? 1 : 0,

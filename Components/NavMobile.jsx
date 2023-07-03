@@ -16,7 +16,7 @@ const NavMobile = ({ data }) => {
         <FiMenu className="text-white text-3xl" />
       </button>
 
-      <Drawer open={isOpen} onClose={toggleDrawer} direction="right" size={300}>
+      <Drawer open={isOpen} onClose={toggleDrawer} direction="right" size={300} className="!h-screen">
         <div className="bg-violet flex flex-col py-5 h-full justify-between shadow-lg shadow-white drawer1">
           <div className="flex flex-col gap-5 drawer2">
             <span className="flex justify-around items-center drawer3">

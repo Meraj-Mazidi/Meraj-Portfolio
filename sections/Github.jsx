@@ -61,9 +61,14 @@ const Github = () => {
       </div>
 
       {/* Arrow up */}
-      <a href="#nav" className="absolute w-[50px] h-[50px] bg-violet rounded-full right-2 flex justify-center items-center animate-bounce shadow shadow-white cursor-pointer hover:bg-blue text-blue hover:text-white transition-all duration-300">
+      {/* <div className="w-[50px] h-[50px]  rounded-full right-2 flex justify-center items-center cursor-pointer">
+        <a
+          href="#nav"
+          className="animate-bounce shadow shadow-white cursor-pointer hover:bg-blue text-blue hover:text-white transition-all duration-300 rounded-full bg-violet arrowUp"
+        >
           <HiArrowUp className="text-3xl" />
-      </a>
+        </a>
+      </div> */}
     </section>
   );
 };
