@@ -30,7 +30,7 @@ const Header = () => {
     >
       {/* Left Side */}
       <div
-        className="col-span-1 md:col-span-2 lg:col-span-1 py-5 pt-5 flex flex-col gap-3 relative"
+        className="col-span-1 md:col-span-2 lg:col-span-1 py-5 pt-5 flex flex-col gap-3 relative lg:mt-5 xl:mt-20"
         style={{
           transform: isInView ? "none" : "translateX(-1000px)",
           opacity: isInView ? 1 : 0,

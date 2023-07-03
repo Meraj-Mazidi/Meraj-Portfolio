@@ -74,7 +74,7 @@ const Images = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 px-6 md:pr-5">
           {ImagesData.map((item, i) => (
-            <span key={i} className="w-full md:w-[90%]">
+            <span key={i} className="w-full md:w-[90%] xl:w-full">
               <img
                 src={item.image}
                 alt="Meraj Mazidi"
