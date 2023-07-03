@@ -9,7 +9,7 @@ const Github = () => {
 
   return (
     <section
-      className="w-screen px-6 md:pl-0 md:pr-10 lg:pl-32 xl:container xl:mx-auto mt-[100px] mb-[80px] relative"
+      className="w-full px-6 md:pl-0 md:pr-10 lg:pl-32 xl:container xl:mx-auto mt-[100px] mb-[80px] relative"
       ref={ref}
     >
       <img

@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header
-      className="w-screen h-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 mb-10 px-6 md:pr-0 md:pl-10 lg:pl-32 xl:container xl:mx-auto"
+      className="w-full h-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 mb-10 px-6 md:pr-0 md:pl-10 lg:pl-32 xl:container xl:mx-auto"
       id="home"
       ref={ref}
     >

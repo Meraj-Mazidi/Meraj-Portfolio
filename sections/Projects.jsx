@@ -45,7 +45,7 @@ const Projects = () => {
   const isInView = useInView(ref);
 
   return (
-    <section className="w-screen px-6 md:px-10 lg:pl-32 xl:container xl:mx-auto mt-[400px] md:mt-[100px]" ref={ref}>
+    <section className="w-full px-6 md:px-10 lg:pl-32 xl:container xl:mx-auto mt-[400px] md:mt-[100px]" ref={ref}>
       <div
         className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 justify-evenly relative"
         style={{

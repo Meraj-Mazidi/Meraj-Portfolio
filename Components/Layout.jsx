@@ -8,7 +8,9 @@ const Layout = ({ Children }) => {
     <>
       <Navbar />
       <ContactNav />
-      {Children}
+      <div className="parentEl">
+        {Children}
+      </div>
     </>
   );
 };

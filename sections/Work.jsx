@@ -9,7 +9,7 @@ const Work = () => {
   const isInView = useInView(ref);
 
   return (
-    <section className="w-screen px-6 md:pr-0 md:pl-10 lg:pl-32 xl:container xl:mx-auto mt-[100px]" id="work" ref={ref}>
+    <section className="w-full px-6 md:pr-0 md:pl-10 lg:pl-32 xl:container xl:mx-auto mt-[100px]" id="work" ref={ref}>
       <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 relative">
         <img
           src={"images/vectors/ellipse.svg"}

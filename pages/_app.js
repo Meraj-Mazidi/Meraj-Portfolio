@@ -33,8 +33,10 @@ export default function App({ Component, pageProps }) {
         }}
       />
 
-      <Layout />
-      <Component {...pageProps} />
+      <Layout Children={<Component {...pageProps} />} />
+      {/* <Layout />
+      <Component {...pageProps} /> */}
+      
     </>
   );
 }

@@ -8,7 +8,7 @@ const Explore = () => {
 
   return (
     <section
-      className="w-screen px-6 md:pr-5 md:pl-10 lg:pl-32  xl:container xl:mx-auto my-10 mb-48 relative mt-[100px] xl:mt-[200px]"
+      className="w-full px-6 md:pr-5 md:pl-10 lg:pl-32  xl:container xl:mx-auto my-10 mb-48 relative mt-[100px] xl:mt-[200px]"
       id="explore"
       ref={ref}
     >

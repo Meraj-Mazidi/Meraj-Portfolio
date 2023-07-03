@@ -4,7 +4,7 @@ import { BsEmojiWink, BsEmojiSmile } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="w-screen lg:pl-18 mb-5 flex gap-5 justify-center items-center relative">
+    <footer className="w-full lg:pl-18 mb-5 flex gap-5 justify-center items-center relative">
       <span className="bg-violet w-1/3 h-[0.5px]" />
       <p className="flex items-center gap-2 font-poppins text-white whitespace-nowrap">
         <BsEmojiSmile className="text-xl animate-bounce" />

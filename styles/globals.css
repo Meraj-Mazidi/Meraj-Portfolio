@@ -38,15 +38,15 @@
 }
 
 body {
+  width: 100% !important;
   overflow-x: hidden !important;
-  width: 100vw;
   scroll-behavior: smooth;
   background: #232946;
 }
 
 .parentEl {
+  width: 100vw !important;
   overflow-x: hidden !important;
-  width: 100% !important;
 }
 
 .abs {
