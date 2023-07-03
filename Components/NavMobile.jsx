@@ -17,9 +17,9 @@ const NavMobile = ({ data }) => {
       </button>
 
       <Drawer open={isOpen} onClose={toggleDrawer} direction="right" size={300}>
-        <div className="bg-violet flex flex-col py-5 h-full justify-between shadow-lg shadow-white">
-          <div className="flex flex-col gap-5">
-            <span className="flex justify-around items-center">
+        <div className="bg-violet flex flex-col py-5 h-full justify-between shadow-lg shadow-white drawer1">
+          <div className="flex flex-col gap-5 drawer2">
+            <span className="flex justify-around items-center drawer3">
               <h1 className="font-pt text-xl">Meraj Mazidi</h1>
               <FiX
                 className="text-2xl cursor-pointer text-gray-600 hover:text-black"
@@ -27,11 +27,11 @@ const NavMobile = ({ data }) => {
               />
             </span>
 
-            <ul className="mt-10 mx-8">
+            <ul className="mt-10 mx-8 drawer4">
               {data.map((item, i) => (
                 <li
                   key={i}
-                  className="text-black font-poppins font-bold text-lg py-5 flex items-center gap-2"
+                  className="text-black font-poppins font-bold text-lg py-5 flex items-center gap-2 drawer5"
                 >
                   <a
                     href={item.path}
@@ -45,10 +45,10 @@ const NavMobile = ({ data }) => {
             </ul>
           </div>
 
-          <span className="w-full flex justify-center">
+          <span className="w-full flex justify-center drawer6">
             <Link href={"/connect"}>
               <button
-                className="w-56 h-11 bg-black shadow-blue shadow-lg hover:bg-white hover:text-black hover:-translate-y-3 transition-all duration-500 rounded text-white font-arvo font-bold text-sm"
+                className="w-56 h-11 bg-black shadow-blue shadow-lg hover:bg-white hover:text-black hover:-translate-y-3 transition-all duration-500 rounded text-white font-arvo font-bold text-sm drawer7"
                 onClick={toggleDrawer}
               >
                 <a href="#contact">Let's Connect</a>

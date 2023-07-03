@@ -149,10 +149,10 @@ const projects = () => {
         <div className="flex flex-col gap-10 justify-center items-center mb-20">
           {/* Title */}
           <span className="flex flex-col gap-5 text-center mb-20">
-            <p className="text-white font-extrabold text-5xl">
+            <p className="text-white font-extrabold text-5xl px-2 md:px-0">
               Something that he has build
             </p>
-            <p className="text-white text-lg">
+            <p className="text-white text-lg px-6 md:px-0">
               with <span className="text-pink font-bold">love</span>, expertise
               and pinch of magical ingredients
             </p>
