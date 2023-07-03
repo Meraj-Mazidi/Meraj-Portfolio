@@ -4,6 +4,7 @@ import Head from "next/head";
 import Tilt from "react-parallax-tilt";
 import Link from "next/link";
 import { Footer } from "../../sections";
+import { NextSeo } from "next-seo";
 
 export const ProjectsFull = [
   {
@@ -100,9 +101,30 @@ const projects = () => {
   return (
     <Fragment>
       <Head>
-        <title>Meraj Projects :)</title>
         <link rel="icon" href="/logo-icon.png" />
+        <meta name="description" content="Meraj Mazidi Portfolio Page | Meraj's Projects" />
+        <meta name="keywords" content="Meraj Mazidi Portfolio, Projects, React, Next.js, Tailwind, design" />
+        <meta name="author" content="Meraj Mazidi" />
       </Head>
+
+      <NextSeo
+        title="Meraj Projects :)"
+        description="Meraj Mazidi Portfolio Page | Meraj's Projects"
+        canonical="https://meraj.vercel.app/projects/"
+        openGraph={{
+          url: "https://meraj.vercel.app/projects/",
+          title: "Meraj Mazidi",
+          description: "Meraj Mazidi Portfolio Page | Meraj's Projects",
+          siteName: "Meraj Mazidi",
+          type: "website",
+          locale: "en_US",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+      />
 
       <section className="w-screen lg:pl-32 py-16 font-poppins relative xl:container xl:mx-auto">
         <img

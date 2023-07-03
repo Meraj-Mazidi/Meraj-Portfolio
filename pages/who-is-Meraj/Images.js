@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { Fragment } from "react";
+import { NextSeo } from "next-seo";
 
 const ImagesData = [
   {
@@ -35,10 +36,32 @@ const Images = () => {
     <Fragment>
       <Head>
         <>
-          <title>Meraj Images</title>
           <link rel="icon" href="/logo-icon.png" />
+          <meta name="description" content="Meraj Mazidi Portfolio Page" />
+          <meta name="keywords" content="Meraj Mazidi Portfolio" />
+          <meta name="author" content="Meraj Mazidi" />
         </>
       </Head>
+
+      <NextSeo
+        title="Meraj Images"
+        description="Meraj Mazidi Portfolio Page - Meraj Images"
+        canonical="https://meraj.vercel.app/who-is-Meraj/Images"
+        openGraph={{
+          url: "https://meraj.vercel.app/who-is-Meraj/Images",
+          title: "Meraj Mazidi",
+          description: "Meraj Mazidi Portfolio Page",
+          siteName: "Meraj Mazidi",
+          type: "website",
+          locale: "en_US",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+      />
+
       <section className="w-screen h-full md:pl-10 lg:pl-32 mb-10 xl:container xl:mx-auto">
         <div className="flex flex-col items-center text-center px-4 mt-5 md:mt-0">
           <p className="text-white text-4xl font-bold text-center">
