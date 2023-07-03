@@ -56,7 +56,7 @@ const moverii = () => {
         }}
       />
 
-      <section className="w-screen h-full lg:pl-32 mb-10 xl:container xl:mx-auto">
+      <section className="w-full h-full lg:pl-32 mb-10 xl:container xl:mx-auto parentEl">
         {/* Top part */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center relative">
           <img
@@ -86,7 +86,7 @@ const moverii = () => {
                   key={i}
                   href={btn.path}
                   target={btn.target}
-                  className={`px-6 sm:px-4 xl:px-6 py-4 w-64 sm:w-52 md:w-56 2xl:w-60 text-base h-25 transition-all rounded overflow-hidden border-2 hover:shadow-light-xl hover:outline-none hover:border-pink focus:outline-none font-poppins font-bold z-10 text-center ${btn.customClass}`}
+                  className={`px-6 sm:px-4 xl:px-6 py-4 w-full md:w-56 2xl:w-60 text-base h-25 transition-all rounded overflow-hidden border-2 hover:shadow-light-xl hover:outline-none hover:border-pink focus:outline-none font-poppins font-bold z-10 text-center ${btn.customClass}`}
                 >
                   {btn.text}
                 </a>

@@ -38,7 +38,7 @@ export default function Home() {
         }}
       />
 
-      <main className="bg-blue w-screen">
+      <main className="bg-blue w-full parentEl">
         <Header />
         <Explore />
         <Work />

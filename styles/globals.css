@@ -38,9 +38,19 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  width: 100vw;
   scroll-behavior: smooth;
   background: #232946;
+}
+
+.parentEl {
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+.abs {
+  position: absolute !important;
 }
 
 .font-pt {
@@ -477,7 +487,7 @@ input {
 }
 
 .connect {
-  width: 100vw;
+  width: 100%;
   padding-top: 1rem;
   padding-bottom: 4rem /* 64px */;
   position: relative;

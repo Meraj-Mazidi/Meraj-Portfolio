@@ -102,8 +102,14 @@ const projects = () => {
     <Fragment>
       <Head>
         <link rel="icon" href="/logo-icon.png" />
-        <meta name="description" content="Meraj Mazidi Portfolio Page | Meraj's Projects" />
-        <meta name="keywords" content="Meraj Mazidi Portfolio, Projects, React, Next.js, Tailwind, design" />
+        <meta
+          name="description"
+          content="Meraj Mazidi Portfolio Page | Meraj's Projects"
+        />
+        <meta
+          name="keywords"
+          content="Meraj Mazidi Portfolio, Projects, React, Next.js, Tailwind, design"
+        />
         <meta name="author" content="Meraj Mazidi" />
       </Head>
 
@@ -126,16 +132,18 @@ const projects = () => {
         }}
       />
 
-      <section className="w-screen lg:pl-32 py-16 font-poppins relative xl:container xl:mx-auto">
+      <section
+        className="w-full lg:pl-32 py-16 font-poppins relative xl:container xl:mx-auto parentEl"
+      >
         <img
           src={"images/vectors/quater-spin.svg"}
           alt="shape"
-          className="absolute -right-20 top-[80px] md:top-0 lg:w-[500px]"
+          className="absolute -right-20 top-[80px] md:top-0 lg:w-[500px] abs"
         />
         <img
           src={"images/vectors/boxes.svg"}
           alt="shape"
-          className="absolute right-0 bottom-[30%] rotate-45 blur-sm"
+          className="absolute right-0 bottom-[30%] rotate-45 blur-sm abs"
           width={2000}
         />
         <div className="flex flex-col gap-10 justify-center items-center mb-20">
@@ -182,7 +190,7 @@ const projects = () => {
             </ul>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0">
+        <div className="absolute bottom-0 left-0 right-0 abs">
           <Footer />
         </div>
       </section>

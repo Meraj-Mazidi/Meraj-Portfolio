@@ -33,24 +33,19 @@ const navData = [
 const Navbar = () => {
   const [IsActive, setIsActive] = useState(1);
 
-  const handleActiveLink = (id) => {
-    setIsActive(id);
-  };
-
+  // For Mobile view - Gets window size
   const size = useWindowSize();
   let isMobile = size.width < 900 ? true : false;
 
   function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
       width: undefined,
-      height: undefined,
     });
 
     useEffect(() => {
       function handleResize() {
         setWindowSize({
           width: window.innerWidth,
-          height: window.innerHeight,
         });
       }
       window.addEventListener("resize", handleResize);
@@ -61,11 +56,13 @@ const Navbar = () => {
     return windowSize;
   }
 
+  const handleActiveLink = (id) => {
+    setIsActive(id);
+  };
+
   return (
-    // <nav className="bg-[rgba(43,45,66,0.3)] backdrop-blur-[10px] base-blur sticky-position top-0 z-[9999]">
-    <nav className="nav">
-      {/* <div className="flex items-center h-28 transition-all duration-500 lg:!container xl:mx-auto px-10 xl:pl-32 justify-between"> */}
-      <div className="nav-child">
+    <nav className="nav bg-[rgba(43,45,66,0.3)] backdrop-blur-[10px] base-blur sticky-position top-0 z-[9999]">
+      <div className="nav-child flex items-center h-28 transition-all duration-500 lg:!container xl:mx-auto px-10 xl:pl-32 justify-between parentEl">
         <Link href="/">
           <img
             src={"/logo-blue-bg-2.png"}
@@ -76,8 +73,7 @@ const Navbar = () => {
         {isMobile ? (
           <NavMobile data={navData} />
         ) : (
-          // <ul className="flex !gap-10 text-white font-poppins font-bold">
-          <ul className="nav-ul">
+          <ul className="nav-ul flex !gap-10 text-white font-poppins font-bold">
             {navData.map((item) => (
               <li
                 key={item.id}

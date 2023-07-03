@@ -37,7 +37,7 @@ const LetsConnect = () => {
   };
 
   return (
-    <div className="w-screen lg:pr-10 lg:pl-32 pt-4 pb-16 font-poppins relative xl:container xl:mx-auto connect">
+    <div className="w-screen lg:pr-10 lg:pl-32 pt-4 pb-16 font-poppins relative xl:container xl:mx-auto connect parentEl">
       {/* title */}
       <span className="flex flex-col gap-5 text-center mb-20 px-4 lg:px-0 connect2">
         <p className="text-white font-extrabold text-3xl md:text-5xl leading-snug">

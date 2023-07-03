@@ -35,7 +35,7 @@ const index = () => {
         }}
       />
 
-      <section className="w-full font-poppins">
+      <section className="!w-full font-poppins overflow-x-hidden parentEl">
         <LetsConnect />
       </section>
     </Fragment>
