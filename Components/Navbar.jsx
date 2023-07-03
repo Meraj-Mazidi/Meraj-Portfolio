@@ -61,7 +61,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="nav bg-[rgba(43,45,66,0.3)] backdrop-blur-[10px] base-blur sticky-position top-0 z-[9999]">
+    <nav id="nav" className="nav bg-[rgba(43,45,66,0.3)] backdrop-blur-[10px] base-blur sticky-position top-0 z-[9999]">
       <div className="nav-child flex items-center h-28 transition-all duration-500 lg:!container xl:mx-auto px-10 xl:pl-32 justify-between parentEl">
         <Link href="/">
           <img

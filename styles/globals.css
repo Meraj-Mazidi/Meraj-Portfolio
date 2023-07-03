@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -39,16 +39,30 @@
 
 body,
 html {
-  width: 100% !important;
-  overflow-x: hidden !important;
+  width: 100vw !important;
+  /* overflow-x: hidden !important; */
   scroll-behavior: smooth;
   background: #232946;
+  box-sizing: border-box;
 }
 
-.parentEl {
-  width: 100% !important;
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
   overflow-x: hidden !important;
 }
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
+/* .parentEl {
+  width: 100% !important;
+  overflow-x: hidden !important;
+} */
 
 .abs {
   position: absolute !important;
@@ -571,9 +585,27 @@ input {
   font-size: 150px !important;
 }
 
+.me {
+  padding-left: 1.5rem /* 24px */;
+  padding-right: 1.5rem /* 24px */;
+}
+
 @media (min-width: 1024px) {
   .me {
-      align-items: center !important;
+    padding-left: 8rem /* 128px */;
+  }
+}
+
+@media (min-width: 768px) {
+  .me {
+    padding-left: 2.5rem /* 40px */;
+    padding-right: 2.5rem /* 40px */;
+  }
+}
+
+@media (min-width: 1024px) {
+  .me {
+    align-items: center !important;
   }
 }
 
@@ -600,18 +632,18 @@ input {
 
 .drawer4 {
   margin-top: 40px;
-  margin-left: 2rem/* 32px */;
-  margin-right: 2rem/* 32px */;
+  margin-left: 2rem /* 32px */;
+  margin-right: 2rem /* 32px */;
 }
 
 .drawer5 {
   color: black;
   font-family: Poppins, sans-serif;
   font-weight: 700;
-  font-size: 1.125rem/* 18px */;
-  line-height: 1.75rem/* 28px */;
-  padding-top: 1.25rem/* 20px */;
-  padding-bottom: 1.25rem/* 20px */;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  padding-top: 1.25rem /* 20px */;
+  padding-bottom: 1.25rem /* 20px */;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -624,13 +656,27 @@ input {
 }
 
 .drawer7 {
-  width: 14rem/* 224px */;
-  height: 2.75rem/* 44px */;
+  width: 14rem /* 224px */;
+  height: 2.75rem /* 44px */;
   background-color: black;
   --tw-shadow-color: #232946;
   --tw-shadow: var(--tw-shadow-colored);
-  border-radius: 0.25rem/* 4px */;
+  border-radius: 0.25rem /* 4px */;
   font-weight: 700;
-  font-size: 0.875rem/* 14px */;
-  line-height: 1.25rem/* 20px */;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+}
+
+.cards {
+  padding-left: 1.25rem /* 20px */;
+  padding-right: 1.25rem /* 20px */;
+  height: 100%;
+  margin-top: 8rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    margin-top: 0px;
+  }
 }

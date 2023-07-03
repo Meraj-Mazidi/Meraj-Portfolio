@@ -7,7 +7,7 @@ const Connect = () => {
   const isInView = useInView(ref);
   return (
     <section className="w-full px-6 md:pl-10 lg:pl-32 xl:container xl:mx-auto mt-[100px]" ref={ref}>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 relative">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 relative mb-8 md:mb-0">
         <img
           src={"images/vectors/circle-spin.svg"}
           alt="Circle"
@@ -60,7 +60,7 @@ const Connect = () => {
       </div>
 
       <span
-        className="flex justify-center lg:mr-28"
+        className="md:flex md:justify-center lg:mr-28"
         style={{
           transform: isInView ? "none" : "translateY(100px)",
           opacity: isInView ? 1 : 0,

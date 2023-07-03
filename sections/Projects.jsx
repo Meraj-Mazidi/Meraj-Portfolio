@@ -47,7 +47,7 @@ const Projects = () => {
   return (
     <section className="w-full px-6 md:px-10 lg:pl-32 xl:container xl:mx-auto mt-[400px] md:mt-[100px]" ref={ref}>
       <div
-        className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 justify-evenly relative"
+        className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 justify-evenly relative mb-12 md:mb-0"
         style={{
           opacity: isInView ? 1 : 0,
           transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
@@ -74,7 +74,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <span className="flex justify-center py-28">
+      <span className="md:flex md:justify-center py-28">
         <CustomButton text="Show me More!" href="/projects" target="_self" />
       </span>
     </section>

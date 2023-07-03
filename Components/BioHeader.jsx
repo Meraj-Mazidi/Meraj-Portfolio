@@ -6,7 +6,7 @@ import { LineText, CustomButton } from "../Components";
 
 const BioHeader = () => {
   return (
-    <div className="w-screen h-full grid grid-cols-1 lg:grid-cols-2 md:gap-y-20 px-6 md:px-10 lg:pl-32 mb-10 xl:container xl:mx-auto lg:items-center me mt-5 xl:mt-10">
+    <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 md:gap-y-20 px-6 md:px-10 lg:pl-32 mb-10 xl:container xl:mx-auto lg:items-center me mt-5 xl:mt-10">
       {/* left Side */}
       <div className="flex flex-col gap-4 lg:mt-10">
         <LineText text="Who are you?" />
