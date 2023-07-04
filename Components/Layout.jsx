@@ -8,7 +8,7 @@ const Layout = ({ Children }) => {
     <>
       <Navbar />
       <ContactNav />
-      <div className="parentEl">
+      <div>
         {Children}
       </div>
     </>

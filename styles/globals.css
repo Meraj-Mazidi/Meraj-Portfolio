@@ -42,8 +42,10 @@ body {
   height: 100% !important;
   /* overflow-x: hidden !important; */
   scroll-behavior: smooth;
-  background: #232946;
+  background-color: #232946;
   box-sizing: border-box;
+  background-image: url(/images/dots.png);
+  background-size: contain;
 }
 
 html > * {
@@ -903,5 +905,18 @@ input {
 @media (min-width: 768px) {
   .pro6 {
     margin-top: 0px;
+  }
+}
+
+.who {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .who {
+    flex-direction: row;
   }
 }

@@ -34,9 +34,6 @@ export default function App({ Component, pageProps }) {
       />
 
       <Layout Children={<Component {...pageProps} />} />
-      {/* <Layout />
-      <Component {...pageProps} /> */}
-      
     </>
   );
 }

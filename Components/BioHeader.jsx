@@ -32,7 +32,7 @@ const BioHeader = () => {
           Also, I happen to possses a great sense of humer! :)
         </p>
 
-        <span className="flex flex-col md:flex-row gap-4 z-10">
+        <span className="flex flex-col md:flex-row gap-4 z-10 who">
           <CustomButton
             text="Check out Resume"
             href="https://ibb.co/crtT7GD"
