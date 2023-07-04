@@ -408,6 +408,7 @@ input {
   padding-left: 12px;
   padding-right: 12px;
   width: 275px;
+  background: #232946 !important;
 }
 
 .githubCard2:hover {
