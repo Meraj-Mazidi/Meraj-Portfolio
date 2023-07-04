@@ -61,14 +61,14 @@ const Github = () => {
       </div>
 
       {/* Arrow up */}
-      {/* <div className="w-[50px] h-[50px]  rounded-full right-2 flex justify-center items-center cursor-pointer">
+      <div className="w-[50px] h-[50px]  rounded-full right-2 flex justify-center items-center cursor-pointer">
         <a
-          href="#nav"
+          href="#home"
           className="animate-bounce shadow shadow-white cursor-pointer hover:bg-blue text-blue hover:text-white transition-all duration-300 rounded-full bg-violet arrowUp"
         >
           <HiArrowUp className="text-3xl" />
         </a>
-      </div> */}
+      </div>
     </section>
   );
 };

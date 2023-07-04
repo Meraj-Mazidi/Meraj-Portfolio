@@ -1,5 +1,6 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { FiPhone } from "react-icons/fi";
 
 const cardData = [
   {
@@ -30,6 +31,13 @@ const cardData = [
     alt: "Instagram",
     href: "https://www.instagram.com/meraj_mazidii/",
   },
+  {
+    id: 5,
+    icon: "",
+    text: "(+98) 936 334 7522",
+    alt: "Phone Number",
+    href: "Tel: 00989363347522",
+  },
 ];
 
 const ContactCard = () => {
@@ -46,7 +54,15 @@ const ContactCard = () => {
               target="_blank"
               className="bg-blue p-2 px-3 rounded-xl flex items-center gap-3 cursor-pointer hover:shadow-md hover:shadow-white hover:scale-105 transition-all duration-300 w-[275px] lg:w-[285px] githubCard2"
             >
-              <img src={item.icon} alt={item.alt} className="w-8 githubCard3" />
+              {item.id === 5 ? (
+                <FiPhone className="text-2xl text-violet w-8 phoneNum" />
+              ) : (
+                <img
+                  src={item.icon}
+                  alt={item.alt}
+                  className="w-8 githubCard3"
+                />
+              )}
               <p
                 className={`text-violet hover:text-white transition-all duration-200 hover:border-b-2 hover:border-pink githubCard4 ${
                   item.id === 1

@@ -3,6 +3,15 @@ import Head from "next/head";
 import { Fragment } from "react";
 import { NextSeo } from "next-seo";
 
+// Gallery
+import LightGallery from "lightgallery/react";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
 const ImagesData = [
   {
     image: "/images/Bio/1.JPG",
@@ -62,7 +71,7 @@ const Images = () => {
         }}
       />
 
-      <section className="w-screen h-full md:pl-10 lg:pl-32 mb-10 xl:container xl:mx-auto">
+      <section className="w-screen h-full md:pl-10 lg:pl-32 mb-10 xl:container xl:mx-auto mt-5 xl:mt-10">
         <div className="flex flex-col items-center text-center px-4 mt-5 md:mt-0">
           <p className="text-white text-4xl font-bold text-center">
             How do I look like in the real world?
@@ -72,17 +81,25 @@ const Images = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 px-6 md:pr-5">
+        <LightGallery
+          speed={500}
+          plugins={[lgThumbnail, lgZoom]}
+          elementClassNames="!grid !grid-cols-1 md:!grid-cols-2 !gap-10 !mt-16 !px-6 md:!pr-5"
+        >
           {ImagesData.map((item, i) => (
-            <span key={i} className="w-full md:w-[90%] xl:w-full">
+            <a
+              href={item.image}
+              key={i}
+              className="w-full md:w-[90%] xl:w-full"
+            >
               <img
                 src={item.image}
                 alt="Meraj Mazidi"
                 className={`w-full h-full rounded-2xl hover:shadow-light-3xl object-cover object-center ${item.customClass}`}
               />
-            </span>
+            </a>
           ))}
-        </div>
+        </LightGallery>
       </section>
     </Fragment>
   );
