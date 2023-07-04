@@ -137,7 +137,7 @@ const LetsConnect = () => {
 
         <div className="flex justify-center mt-10">
           <button
-            className={`px-6 sm:px-4 xl:px-6 py-4 text-base h-25 transition-all rounded overflow-hidden border-2 hover:shadow-light-xl hover:outline-none hover:border-pink focus:outline-none font-poppins font-bold z-10 bg-pink text-blue hover:text-pink hover:bg-transparent border-transparent shadow-sm shadow-violet`}
+            className={`px-6 sm:px-4 xl:px-6 py-4 text-base h-25 transition-all rounded overflow-hidden border-2 hover:shadow-light-xl hover:outline-none hover:border-pink focus:outline-none font-poppins font-bold z-10 bg-pink text-blue hover:text-pink hover:bg-transparent border-transparent shadow-sm shadow-violet w-full md:w-fit flex justify-center`}
             onClick={() => setMessageSent(true)}
           >
             <p className="flex gap-2 items-center hover:gap-10 transition-all duration-200">

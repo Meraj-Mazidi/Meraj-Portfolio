@@ -117,7 +117,7 @@ const ContactNav = () => {
                 {item.alt === "telegram" ? (
                   <BsTelegram className="contactNav-3 text-[33px] text-violet" />
                 ) : item.alt === "phoneNumber" ? (
-                  <FiPhone className="contactNav text-[33px] text-violet" />
+                  <FiPhone className="contactNavphone text-[33px] text-violet" />
                 )
                 : (
                   <img

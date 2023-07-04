@@ -728,9 +728,9 @@ input {
 }
 
 .phoneNum {
-  width: 2rem/* 32px */;
-  font-size: 1.5rem/* 24px */;
-  line-height: 2rem/* 32px */;
+  width: 2rem /* 32px */;
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
 }
 
 .sideNav {
@@ -740,7 +740,168 @@ input {
 }
 
 .sideNav:hover {
-  --tw-scale-x: .75;
-  --tw-scale-y: .75;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-scale-x: 0.75;
+  --tw-scale-y: 0.75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.contactNavphone {
+  font-size: 33px !important;
+}
+
+.whoIsMerajBtn {
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .whoIsMerajBtn {
+    width: 14rem /* 224px */ !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  .whoIsMerajBtn {
+    width: 15rem /* 240px */ !important;
+  }
+}
+
+.pro {
+  width: 100%;
+  padding-left: 1.5rem /* 24px */;
+  padding-right: 1.5rem /* 24px */;
+  margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+  .pro {
+    padding-right: 0.75rem /* 12px */;
+    padding-left: 2.5rem /* 40px */;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pro {
+    padding-left: 8rem /* 128px */;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pro {
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  @media (min-width: 640px) {
+    .pro {
+      max-width: 640px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  @media (min-width: 768px) {
+    .pro {
+      max-width: 768px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  @media (min-width: 1024px) {
+    .pro {
+      max-width: 1024px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  @media (min-width: 1280px) {
+    .pro {
+      max-width: 1280px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  @media (min-width: 1536px) {
+    .pro {
+      max-width: 1536px;
+    }
+  }
+}
+
+.pro2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .pro2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.pro3 {
+  position: absolute;
+  right: -8rem;
+  bottom: -140%;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 1024px) {
+  .pro3 {
+    top: 50%;
+  }
+}
+
+.pro4 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 1.25rem /* 20px */;
+  padding-bottom: 1.25rem /* 20px */;
+  font-family: Poppins, sans-serif;
+  position: relative;
+}
+
+.pro5 {
+  position: absolute;
+  right: 25%;
+  top: 1.25rem /* 20px */;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .pro5 {
+    display: block;
+  }
+}
+
+.pro6 {
+  padding-left: 1.25rem /* 20px */;
+  padding-right: 1.25rem /* 20px */;
+  height: 100%;
+  margin-top: 8rem /* 128px */;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .pro6 {
+    margin-top: 0px;
+  }
 }

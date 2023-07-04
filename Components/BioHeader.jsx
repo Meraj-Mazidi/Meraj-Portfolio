@@ -1,8 +1,14 @@
 import React from "react";
-import Image from "next/image";
-import Tilt from "react-parallax-tilt";
 import { LineText, CustomButton } from "../Components";
-// import MainPic from "../public/images/Bio/main.jpg";
+
+// Gallery
+import LightGallery from "lightgallery/react";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
 
 const BioHeader = () => {
   return (
@@ -31,27 +37,32 @@ const BioHeader = () => {
             text="Check out Resume"
             href="https://ibb.co/crtT7GD"
             target="_blank"
-            customClass="!w-full md:!w-56 2xl:!w-60"
+            customClass="!w-full md:!w-56 xl:!w-60 whoIsMerajBtn"
           />
           <CustomButton
             text="See my Images"
             href="/who-is-Meraj/Images/"
             target="_self"
-            customClass="!w-full md:!w-56 2xl:!w-60"
+            customClass="!w-full md:!w-56 xl:!w-60 whoIsMerajBtn"
           />
         </span>
       </div>
 
       {/* Right Side */}
       <div className="flex flex-col justify-center items-center z-10 mt-20 md:mt-0 lg:mt-2">
-        <div className="lg:w-[90%] rounded-xl shadow-light-xl hover:shadow-light-3xl">
-          <img
-            // src={MainPic}
-            src={"/images/Bio/main.JPG"}
-            alt="MerajMazidi"
-            className="w-full rounded-xl object-cover object-center"
-          />
-        </div>
+        <LightGallery
+          speed={500}
+          plugins={[lgThumbnail, lgZoom]}
+          elementClassNames="lg:w-[90%] rounded-xl shadow-light-xl hover:shadow-light-3xl"
+        >
+          <a href={"/images/Bio/main.JPG"} className="w-full h-full">
+            <img
+              src={"/images/Bio/main.JPG"}
+              alt="MerajMazidi"
+              className="w-full rounded-xl object-cover object-center"
+            />
+          </a>
+        </LightGallery>
       </div>
     </div>
   );
