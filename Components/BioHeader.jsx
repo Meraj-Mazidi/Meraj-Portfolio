@@ -35,9 +35,10 @@ const BioHeader = () => {
         <span className="flex flex-col md:flex-row gap-4 z-10 who">
           <CustomButton
             text="Check out Resume"
-            href="https://ibb.co/crtT7GD"
-            target="_blank"
+            // href="https://ibb.co/crtT7GD"
+            // target="_blank"
             customClass="!w-full md:!w-56 xl:!w-60 whoIsMerajBtn"
+            disabled={true}
           />
           <CustomButton
             text="See my Images"
