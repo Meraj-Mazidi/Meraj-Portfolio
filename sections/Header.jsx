@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
 import { LineText } from "../Components";
+import moment from "moment";
 
 const btnData = [
   {
@@ -58,12 +59,13 @@ const Header = () => {
         </h1>
 
         <p className="md:w-[80%] text-violet text-base font-medium font-poppins">
-          I'm a 25 years old self-taught Fronted-developer who absolutely LOVES
-          to Code, Create & Design websites and applications. I'm a JS guy, who
-          happens to adore React/Next! I just love exploring new things and
-          learn new technologies in the process. Energetic and a great team
-          player who in every opportunity, looks to find some new friends.{" "}
-          <br /> Wanna share something? Let's get in touch! ;)
+          I'm a {moment("1998-04-21", "YYYY-MM-DD").fromNow(true)} old
+          self-taught Fronted-developer who absolutely LOVES to Code, Create &
+          Design websites and applications. I'm a JS guy, who happens to adore
+          React/Next! I just love exploring new things and learn new
+          technologies in the process. Energetic and a great team player who in
+          every opportunity, looks to find some new friends. <br /> Wanna share
+          something? Let's get in touch! ;)
         </p>
 
         <div className="pt-5 grid grid-cols-1 md:grid-cols-2 !gap-3 mb-6 md:mb-0 md:max-w-[80%] lg:max-w-[70%]">
