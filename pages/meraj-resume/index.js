@@ -3,13 +3,18 @@ import { NextSeo } from "next-seo";
 import Head from "next/head";
 import { HiOutlineDocumentArrowDown, HiDocumentText } from "react-icons/hi2";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
+import { PiHandshakeFill } from "react-icons/pi";
+import Link from "next/link";
 
 const Index = () => {
   const resumePublicView =
     "https://www.canva.com/design/DAGOHcaAKTo/dwpzc3TCfZQ1NjDh8wPKkw/view?utm_content=DAGOHcaAKTo&utm_campaign=designshare&utm_medium=link&utm_source=editor";
 
   const defaultBtnStyles =
-    "px-6 sm:px-4 xl:px-6 py-4 !w-full text-lg transition-all rounded overflow-hidden border-2 hover:shadow-light-xl hover:outline-none hover:border-pink focus:outline-none font-poppins font-bold z-10 text-center flex items-center gap-3";
+    "px-6 sm:px-4 xl:px-6 py-4 !w-full text-lg transition-all rounded overflow-hidden border-2 hover:shadow-light-xl hover:outline-none hover:border-pink focus:outline-none font-poppins font-bold z-10 text-center flex items-center gap-3 hover:gap-8 cursor-pointer";
+  const filledBtn =
+    "bg-pink text-blue hover:text-pink hover:bg-transparent border-transparent";
+  const transparentBtn = "text-pink border-pink hover:bg-pink hover:text-blue";
 
   return (
     <Fragment>
@@ -46,25 +51,36 @@ const Index = () => {
             <a
               href={resumePublicView}
               target="_blank"
-              className={`${defaultBtnStyles} hover:gap-8 justify-start bg-pink text-blue hover:text-pink hover:bg-transparent border-transparent`}
+              className={`${defaultBtnStyles} ${filledBtn} justify-start`}
             >
               View Resume
               <HiDocumentText className="!text-[26px]" />
             </a>
-            <a
-              href={"../../sections/resume/Meraj-Mazidi-Resume.pdf"}
+            <Link
+              to={"/Meraj-Mazidi-Resume.pdf"}
+              href={"/Meraj-Mazidi-Resume.pdf"}
               download
-              className={`${defaultBtnStyles} hover:gap-8 justify-end text-pink border-pink hover:bg-pink hover:text-blue cursor-pointer`}
             >
-              <HiOutlineDocumentArrowDown className="!text-[26px]" />
-              Download Resume
+              <div
+                className={`${defaultBtnStyles} ${transparentBtn} justify-end`}
+              >
+                <HiOutlineDocumentArrowDown className="!text-[26px]" />
+                <p>Download Resume</p>
+              </div>
+            </Link>
+            <a
+              href="/connect"
+              className={`${defaultBtnStyles} ${filledBtn} justify-start`}
+            >
+              Let's connect
+              <PiHandshakeFill className="!text-[26px]" />
             </a>
             <a
               href="/"
-              className={`${defaultBtnStyles} hover:gap-8 justify-start bg-pink text-blue hover:text-pink hover:bg-transparent border-transparent`}
+              className={`${defaultBtnStyles} ${transparentBtn} justify-end`}
             >
-              Go back
               <IoIosArrowDropleftCircle className="!text-[26px]" />
+              Go back
             </a>
           </div>
         </div>
