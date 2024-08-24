@@ -6,8 +6,9 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="description" content="Meraj Mazidi Portfolio Page" />
-        <meta name="keywords" content="Meraj Mazidi Portfolio" />
+        <meta name="keywords" content="Meraj Mazidi Portfolio, Meraj, meraj mazidi, frontend developer, react, nextjs" />
         <meta name="author" content="Meraj Mazidi" />
+        <link rel="icon" href="/logo-icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

@@ -4,17 +4,24 @@ import { LineText } from "../Components";
 
 const btnData = [
   {
+    text: `Check out Resume`,
+    path: "/meraj-resume",
+    target: "_self",
+    customClass:
+      "bg-pink text-blue hover:text-pink hover:bg-transparent border-transparent md:!mr-3",
+  },
+  {
     text: `Let's Connect`,
     path: "/connect",
     target: "_self",
-    customClass:
-      "bg-pink text-blue hover:text-pink hover:bg-transparent border-transparent",
+    customClass: "text-pink border-pink hover:bg-pink hover:text-blue",
   },
   {
     text: `More about Meraj`,
     path: "/who-is-Meraj/",
     target: "_self",
-    customClass: "text-pink border-pink hover:bg-pink hover:text-blue",
+    customClass:
+      "text-pink border-pink hover:bg-pink hover:text-blue md:col-span-full !w-full",
   },
 ];
 
@@ -55,22 +62,22 @@ const Header = () => {
           to Code, Create & Design websites and applications. I'm a JS guy, who
           happens to adore React/Next! I just love exploring new things and
           learn new technologies in the process. Energetic and a great team
-          player who in every opportunity, looks to find some new friends. <br />{" "}
-          Wanna share something? Let's get in touch! ;)
+          player who in every opportunity, looks to find some new friends.{" "}
+          <br /> Wanna share something? Let's get in touch! ;)
         </p>
 
-        <span className="pt-5 flex gap-3 flex-col md:flex-row mb-6 md:mb-0">
+        <div className="pt-5 grid grid-cols-1 md:grid-cols-2 !gap-3 mb-6 md:mb-0 md:max-w-[80%] lg:max-w-[70%]">
           {btnData.map((btn, i) => (
             <a
               key={i}
               href={btn.path}
               target={btn.target}
-              className={`px-6 sm:px-4 xl:px-6 py-4 sm:w-52 md:w-56 2xl:w-60 text-base h-25 transition-all rounded overflow-hidden border-2 hover:shadow-light-xl hover:outline-none hover:border-pink focus:outline-none font-poppins font-bold z-10 text-center ${btn.customClass}`}
+              className={`px-6 sm:px-4 xl:px-6 py-4 w-full text-base transition-all rounded overflow-hidden border-2 hover:shadow-light-xl hover:outline-none hover:border-pink focus:outline-none font-poppins font-bold z-10 text-center ${btn.customClass}`}
             >
               {btn.text}
             </a>
           ))}
-        </span>
+        </div>
       </div>
 
       {/* Right Side */}

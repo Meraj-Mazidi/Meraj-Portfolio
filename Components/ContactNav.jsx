@@ -100,6 +100,7 @@ const ContactNav = () => {
           {/* Social Icons */}
           {socialBarData.map((item, i) => (
             <Popover
+              key={i}
               content={item.popover}
               title={
                 <span className="!text-center flex justify-center font-semibold text-base">
