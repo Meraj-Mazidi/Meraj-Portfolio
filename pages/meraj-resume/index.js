@@ -6,10 +6,10 @@ import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { PiHandshakeFill } from "react-icons/pi";
 import Link from "next/link";
 
-const Index = () => {
-  const resumePublicView =
-    "https://www.canva.com/design/DAGOHcaAKTo/dwpzc3TCfZQ1NjDh8wPKkw/view?utm_content=DAGOHcaAKTo&utm_campaign=designshare&utm_medium=link&utm_source=editor";
+const resumePublicView =
+  "https://www.canva.com/design/DAGOw6jLPh0/63Ip17dpTSVG0VLbMnxgZw/view?utm_content=DAGOw6jLPh0&utm_campaign=designshare&utm_medium=link&utm_source=editor";
 
+const Index = () => {
   const defaultBtnStyles =
     "px-6 sm:px-4 xl:px-6 py-4 !w-full text-lg transition-all rounded overflow-hidden border-2 hover:shadow-light-xl hover:outline-none hover:border-pink focus:outline-none font-poppins font-bold z-10 text-center flex items-center gap-3 hover:gap-8 cursor-pointer";
   const filledBtn =
@@ -57,8 +57,8 @@ const Index = () => {
               <HiDocumentText className="!text-[26px]" />
             </a>
             <Link
-              to={"/Meraj-Mazidi-Resume.pdf"}
-              href={"/Meraj-Mazidi-Resume.pdf"}
+              to={"/Meraj-Mazidi-resume.pdf"}
+              href={"/Meraj-Mazidi-resume.pdf"}
               download
             >
               <div
