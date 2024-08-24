@@ -57,8 +57,8 @@ const Index = () => {
               <HiDocumentText className="!text-[26px]" />
             </a>
             <Link
-              to={"/Meraj-Mazidi-resume.pdf"}
-              href={"/Meraj-Mazidi-resume.pdf"}
+              to={"/Meraj-Mazidi-Resume.pdf"}
+              href={"/Meraj-Mazidi-Resume.pdf"}
               download
             >
               <div
